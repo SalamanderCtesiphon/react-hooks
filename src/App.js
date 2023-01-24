@@ -8,10 +8,15 @@ const App = () => {
     setCount(count + 1);
   };
 
+  const decrementCount = () => {
+    setCount(count - 1);
+  };
+
   return (
     <div className="App">
-      <div>{count}</div>
+      <h1>{count}</h1>
       <button onClick={incrementCount}>Increment</button>
+      <button onClick={decrementCount}>Decrement</button>
     </div>
   );
 };
